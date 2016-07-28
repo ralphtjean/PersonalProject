@@ -1,0 +1,77 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: lightgray;
+}
+
+.container {
+    margin: auto;
+    width: 960px;
+    font-family: 'Walter Turncoat', cursive;
+}
+
+.navigation {
+}
+
+#navlist ul{
+    display: inline-block;
+    margin: 20px 0px;
+    width: 100%;
+    position: relative;
+}
+
+/* below is the navigation bar edits */
+
+#navlist ul li {
+    display: table-cell;
+    text-align: center;
+    vertical-align: top;
+    position: static;
+    text-decoration: overline;
+    font-size: 30px;
+    color: #800020;
+    border-style: double;
+    border-color: black;
+    float: left;
+    width: 23%;
+    text-align: center;
+}
+
+#navlist ul li:hover {
+    color: red;
+    background-color: white;    
+}
+
+.textcolumn {
+    width: 45%;
+    height:auto;
+    float: left;
+    border-style: double;
+    border-color: black;
+    background-color: white;
+}
+
+.slideshow {
+    float: right;
+    width: 45%;
+    background-color: white;
+    border-bottom-style: double;
+    margin-left: 80px;
+    text-align: center;
+}
+
+.slideshow img {
+    width: 400px;
+    height: 400px;
+    padding: 18px;
+}
+
+.slideshow a {
+    font-size: 18px;
+    color: orange;
+    padding: 10px;
+}
+/* adjust slideshow direction buttons above */

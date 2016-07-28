@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+    <head></head>
+        <title>Bike Life</title>
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <link href='https://fonts.googleapis.com/css?family=Walter+Turncoat' rel='stylesheet' type='text/css'> 
+        <script language="javascript">
+            var num=1
+            img1 = new Image ()
+            img1.src = "images/madone.jpg"
+            img2 = new Image ()
+            img2.src = "images/session.jpg"
+            img3 = new Image ()
+            img3.src = "images/marrakesh.jpg"
+            img4 = new Image ()
+            img4.src = "images/supersix.jpg"
+            img5 = new Image ()
+            img5.src = "images/xm700.jpg"
+            img6 = new Image ()
+            img6.src = "images/mundo.jpg"
+            img7 = new Image ()
+            img7.src = "images/townie.jpg"
+    
+            text1 = "Trek Madone"
+            text2 = "Trek Session"
+            text3 = "Salsa Marrakesh"
+            text4 = "Cannondale SuperSix"
+            text5 = "Trek XM700"
+            text6 = "Yuba Mundo"
+            text7 = "Electra Townie"
+    
+            function slideshowUp()
+            {
+                num=num+1
+                if (num==8) //increase number if number of photos increases, such as - 5 photos = (num==6)//
+                {num=1}
+                document.picss.src=eval("img"+num+".src")
+                document.titlej.textboxj.value=eval("text"+num)
+            }
+            function slideshowBack()
+            {
+                num=num-1
+                if (num==0)
+                {num=7} //num must equal 1 less then up function//
+                document.picss.src=eval("img"+num+".src")
+                document.titlej.textboxj.value=eval("text"+num)
+            }
+        </script>
+
+    <body>
+        <div class="container">
+            <div class="navigation">
+                <div id="navlist">
+                    <ul>
+                        <a href="index.html"><li><strong>Home</strong></li></a>
+                        <a href="biketypes.html"><li><strong>Bike Types</strong></li></a>
+                        <a href="bikeuses.html"><li><strong>Bike Uses</strong></li></a>
+                        <a href="biketricks.html"><li><strong>Skills & Tricks</strong></li></a>
+                    </ul>
+                </div>
+            <!-- This ends the nav list div -->
+            </div>
+        <!-- This ends the navigation bar div -->
+            
+            <div class="textcolumn">
+                <h1>Bike Life</h1>
+                    <p>A bicycle can be defined as a vehicle consisting of two wheels in tandem held in a frame, propelled by pedals and steered with handlebars that are attached to the front wheel.</p>
+            
+            
+            </div>
+        <!-- This ends the text column div -->
+        
+            <div class="slideshow">
+                <img src="images/madone.jpg" name="picss" border=0 height="600" width="750">
+                <form name="titlej">
+                    <b><input type="text" width="100" name="textboxj" value="Trek Madone"></b>
+                </form>
+
+                <a href="javascript:slideshowBack()">Back</a>
+                <a href="javascript:slideshowUp()"> Next</a>    
+            </div>
+            
+            </div>
+        <!-- This ends the slideshow div -->
+        
+        </div>
+        <!-- This ends container div -->
+    </body>
+</html>
