@@ -13,13 +13,17 @@ body {
     font-family: 'Walter Turncoat', cursive;
 }
 
+#banner {
+
+}
+
 .navigation {
 }
 
 #navlist ul{
     display: inline-block;
     margin: 20px 0px;
-    width: 100%;
+    width: 107%;
     position: relative;
 }
 
@@ -36,8 +40,9 @@ body {
     border-style: double;
     border-color: black;
     float: left;
-    width: 23%;
+    width: 24%;
     text-align: center;
+    border-radius: 25px;
 }
 
 #navlist ul li:hover {
@@ -75,3 +80,38 @@ body {
     padding: 10px;
 }
 /* adjust slideshow direction buttons above */
+/* slideshow only in the index page, edit photos for other pages below */
+
+#bikepics {
+    float: right;
+    width: 45%;
+    margin-left: 80px;
+    text-align: center;
+}
+
+#bikepics img{
+    width: 200px;
+    height: 200px;
+    padding: 30px;
+    background-color: white;
+}
+
+#btypes h1 {
+    color: darkgoldenrod;
+    
+}
+
+#btypes li {
+    text-indent: 1%;
+    list-style: inside;
+}
+
+#btypes h2 {
+    color: navy;
+    
+}
+
+/* below is only for awareness page */
+#baware h1 {
+    color: green;
+}
